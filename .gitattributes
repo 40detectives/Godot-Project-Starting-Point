@@ -1,0 +1,71 @@
+### General ###
+# LF line endings in the repo (text=auto) and in the working directory (eol=lf)
+* text=auto eol=lf
+
+
+### Godot related ###
+
+# Scripts
+*.gd text
+
+# Scenes
+*.tscn text
+*.escn text
+*.scn filter=lfs diff=lfs merge=lfs binary
+
+# Resources
+*.tres text
+*.res filter=lfs diff=lfs merge=lfs binary
+
+
+### Image formats ###
+
+# Godot officially supported:
+*.png filter=lfs diff=lfs merge=lfs binary
+*.webp filter=lfs diff=lfs merge=lfs binary
+*.jpg filter=lfs diff=lfs merge=lfs binary
+*.jpeg filter=lfs diff=lfs merge=lfs binary
+
+# Supported by godot but not documented:
+*.bmp filter=lfs diff=lfs merge=lfs binary
+*.tga filter=lfs diff=lfs merge=lfs binary
+*.dds filter=lfs diff=lfs merge=lfs binary
+
+# Formats not supported by Godot that you could want to commit to the repo
+*.psd filter=lfs diff=lfs merge=lfs binary
+*.ai filter=lfs diff=lfs merge=lfs binary
+*.tif filter=lfs diff=lfs merge=lfs binary
+*.tiff filter=lfs diff=lfs merge=lfs binary
+*.[gG][iI][fF] filter=lfs diff=lfs merge=lfs binary
+
+
+### Audio formats ###
+*.ogg filter=lfs diff=lfs merge=lfs binary
+*.wav filter=lfs diff=lfs merge=lfs binary
+
+
+### 3D formats ###
+*.dae filter=lfs diff=lfs merge=lfs binary
+*.obj filter=lfs diff=lfs merge=lfs binary
+*.gltf filter=lfs diff=lfs merge=lfs binary
+*.fbx filter=lfs diff=lfs merge=lfs binary
+*.blend* filter=lfs diff=lfs merge=lfs binary
+
+
+### Packaging ###
+*.zip filter=lfs diff=lfs merge=lfs binary
+*.7z filter=lfs diff=lfs merge=lfs binary
+*.gz filter=lfs diff=lfs merge=lfs binary
+*.rar filter=lfs diff=lfs merge=lfs binary
+*.tar filter=lfs diff=lfs merge=lfs binary
+
+### Others ###
+*.pdf filter=lfs diff=lfs merge=lfs binary
+*.doc filter=lfs diff=lfs merge=lfs binary
+*.docx filter=lfs diff=lfs merge=lfs binary
+
+##############################################
+#         Godot + GitHub friendliness        #
+##############################################
+
+*.gd linguist-language=GDScript
